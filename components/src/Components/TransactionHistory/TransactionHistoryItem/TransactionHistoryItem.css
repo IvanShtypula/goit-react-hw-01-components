@@ -1,0 +1,7 @@
+td{
+  border: 1px solid rgb(190, 190, 190);
+    padding: 5px 50px;
+}
+tr:nth-child(2n){
+  background-color: rgb(184, 231, 231);
+}
