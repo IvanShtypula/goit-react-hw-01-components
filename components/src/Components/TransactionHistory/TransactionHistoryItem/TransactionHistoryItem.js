@@ -1,5 +1,5 @@
 import React from 'react';
-import './TransactionHistoryItem.css'
+import styleTrnEl from './TransactionHistoryItem.module.css'
 
 const TransactionHistoryItem = (
  { type,
@@ -7,10 +7,10 @@ const TransactionHistoryItem = (
   currency}
 ) => {  
   return (
-  <tr>
-    <td>{type}</td>
-    <td>{amount}</td>
-    <td>{currency}</td>
+  <tr className={styleTrnEl["table-row"]}>
+    <td className={styleTrnEl["table-data"]}>{type}</td>
+    <td className={styleTrnEl["table-data"]}>{amount}</td>
+    <td className={styleTrnEl["table-data"]}>{currency}</td>
   </tr>
   );
 };
